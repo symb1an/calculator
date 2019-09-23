@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		function a(){
+			var calc = prompt('Выберите действие: Прибавить / Отнять / Поделить / Умножить');
+			var a = +prompt('Первое число');
+			var b = +prompt('Второе число');
+			if (calc === 'Прибавить'){
+				var x = a + b;
+			}
+			else if (calc === 'Отнять'){
+				var x = a - b;
+			}
+			else if (calc === 'Поделить'){
+				var x = a / b;
+			}
+			else if (calc === 'Умножить'){
+				var x = a * b;
+			}
+			else{
+				alert('Error');
+			}
+			return x;
+			}	
+			alert(a());
+			var repeat = confirm('Продолжить?')
+			if (repeat == true){
+				window.location.reload();
+			}
+	</script>
+</body>
+</html>
